@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Marmeto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Marmeto">
+                <h1>Marmeto</h1>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <img src="icons/search.svg" alt="">
+                <img src="icons/heart.svg" alt="">
+                <img src="icons/cart.svg" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero" style="background-image: url('images/background.jpeg')">
+        <div class="container">
+            <div class="logo2">
+                <img src="images/logo.png" alt="Marmeto">
+            </div>
+            <h1>Cart</h1>
+            <div class="breadcrumb">
+                <a href="#">Home</a>
+                <span style="color: black; font-weight: bold;">></span>
+                <span>Cart</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-header">
+                    <span>Product</span>
+                    <span>Price</span>
+                    <span>Quantity</span>
+                    <span>Subtotal</span>
+                </div>
+                <div id="cart-items-container">
+                    <!-- Cart items will be dynamically inserted here -->
+                </div>
+            </div>
+
+            <div class="cart-totals">
+                <h2>Cart Totals</h2>
+                <div class="totals-row">
+                    <span style="font-weight: 500;">Subtotal</span>
+                    <span style="font-size: small ; color: #898989;" id="subtotal">Rs. 0.00</span>
+                </div>
+                <div class="totals-row">
+                    <span style="font-weight: 500;">Total</span>
+                    <span id="total" class="highlight">Rs. 0.00</span>
+                </div>
+                <button class="checkout-btn">Check Out</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="services">
+                <div class="service-item">
+                    <img src="/icons/quality.svg" alt="">
+                    <div>
+                        <h3>High Quality</h3>
+                        <p>crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="/icons/guarantee.svg" alt="">
+                    <div>
+                        <h3>Warranty Protection</h3>
+                        <p>Over 2 years</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="/icons/shipping.svg" alt="">
+                    <div>
+                        <h3>Free Shipping</h3>
+                        <p>Order over 150$</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="/icons/customer-support.svg" alt="">
+                    <div>
+                        <h3>24 / 7 Support</h3>
+                        <p>Dedicated support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
